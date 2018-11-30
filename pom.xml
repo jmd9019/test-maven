@@ -16,19 +16,6 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-      <reporting>
-      <plugin>
-  <!-- <groupId>org.apache.maven.plugins</groupId> -->
-  <artifactId>maven-pmd-plugin</artifactId>
-  <version>3.11.0</version>
-  <configuration>
-    <linkXRef>false</linkXRef>
-    <targetJdk>1.7</targetJdk>
-    <rulesets>
-        <ruleset>/rulesets/basic.xml</ruleset>
-    </rulesets>
-  </configuration>
-</reporting>
 </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
@@ -47,4 +34,20 @@
     <scope>provided</scope>
 </dependency>
   </dependencies>
+  <reporting>
+    <plugins>
+  <plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-pmd-plugin</artifactId>
+<version>3.11.0</version>
+<configuration>
+<linkXRef>false</linkXRef>
+<targetJdk>1.7</targetJdk>
+<rulesets>
+    <ruleset>/rulesets/basic.xml</ruleset>
+</rulesets>
+</configuration>
+</plugin>
+</plugins>
+</reporting>
 </project>
