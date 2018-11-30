@@ -54,9 +54,9 @@
         <version>3.11.0</version>
         <configuration>
             <targetJdk>1.7</targetJdk>
-            <!--<rulesets>-->
-            <!--<ruleset>pmd_rules.xml</ruleset>-->
-            <!--</rulesets>-->
+             <rulesets>
+            <ruleset>pmd_rules.xml</ruleset>
+            </rulesets>
         </configuration>
     </plugin>
   </plugins>
