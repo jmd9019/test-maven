@@ -7,6 +7,7 @@
   <name>test-webapp-maven</name>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <reporting>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -29,6 +30,7 @@
         </configuration>
       </plugin>
     </plugins>
+  </reporting>
   </build>
   <dependencies>
 <dependency>
