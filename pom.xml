@@ -41,6 +41,7 @@
 </dependency>
   </dependencies>
   <reporting>
+    <plugins>
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
@@ -52,5 +53,6 @@
             <!--</rulesets>-->
         </configuration>
     </plugin>
+  </plugins>
 </reporting>
 </project>
