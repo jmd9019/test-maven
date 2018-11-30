@@ -23,6 +23,13 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+
+      <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-pmd-plugin</artifactId>
+    <version>3.11.0</version>
+    </plugin>
+
     </plugins>
   </build>
   <dependencies>
@@ -34,19 +41,16 @@
 </dependency>
   </dependencies>
   <reporting>
-    <plugins>
-  <plugin>
-<groupId>org.apache.maven.plugins</groupId>
-<artifactId>maven-pmd-plugin</artifactId>
-<version>3.11.0</version>
-<configuration>
-<linkXRef>false</linkXRef>
-<targetJdk>1.7</targetJdk>
-<rulesets>
-    <ruleset>/rulesets/basic.xml</ruleset>
-</rulesets>
-</configuration>
-</plugin>
-</plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+            <targetJdk>1.7</targetJdk>
+            <!--<rulesets>-->
+            <!--<ruleset>pmd_rules.xml</ruleset>-->
+            <!--</rulesets>-->
+        </configuration>
+    </plugin>
 </reporting>
 </project>
